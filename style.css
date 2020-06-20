@@ -71,8 +71,8 @@ body{
 }
 
 .app-banner{
-    width: 170px;
-    height: 150px;
+    width: 300px;
+    height: 230px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -86,7 +86,6 @@ body{
 }
 
 .buttons{
-    max-width: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem
