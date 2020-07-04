@@ -54,14 +54,4 @@
     </div>
 </body>
 
-<script>
-    var list = new Vue({el: '#app-list', data: {items: []}});
-    async function load() {
-        const r = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQPYdo0dbFn9F4lg0WrQNZvkfFUyfyTqu2hV82bvcp9duuXUCDZk0XICk5B8uzvuBtBjLaZ9y00bxhx/pub?output=csv');
-        list.items = Papa.parse(await r.text()).data;
-        document.getElementById('app-list').style.visibility = "visible";
-    }
-    load();
-</script>
-
 </html>
